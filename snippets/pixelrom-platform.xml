@@ -31,8 +31,8 @@
   <project path="system/vold" name="platform/system/vold" groups="pdk" remote="pixelrom" />
 
   <project path="vendor/pixelstyle" name="vendor_pixelstyle" remote="mtresk-gitlab" revision="android-10" />
-  <project path="vendor/codeaurora/telephony" name="platform/vendor/codeaurora/telephony" groups="pdk,vendor,qcom" remote="android10-c2f2-release" />
-  <project path="vendor/qcom/opensource/interfaces" name="platform/vendor/qcom/opensource/interfaces" groups="pdk,vendor,qcom" remote="android10-c2f2-release" />
+  <project path="vendor/codeaurora/telephony" name="platform/vendor/codeaurora/telephony" groups="pdk,vendor,qcom" remote="pixelrom" />
+  <project path="vendor/qcom/opensource/interfaces" name="platform/vendor/qcom/opensource/interfaces" groups="pdk,vendor,qcom" remote="pixelrom" />
   <project path="vendor/qcom/opensource/fm-commonsys" name="platform/vendor/qcom/opensource/fm-commonsys" groups="pdk,vendor,qcom" remote="pixelrom" revision="android10-c2f2-release" />
   <project path="vendor/pixelgapps" name="platform_vendor_pixelgapps" remote="gitlab" revision="ten" />
 

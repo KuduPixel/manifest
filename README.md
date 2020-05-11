@@ -28,6 +28,7 @@ $ cd WORKSPACE
 # Install Repo in the created directory
 # Use a real name/email combination, if you intend to submit patches
 $ repo init -u https://github.com/pixel3rom/manifest -b android-10
+
 Downloading the source tree
 This is what you will run each time you want to pull in upstream changes. Keep in mind that on your first run, it is expected to take a while as it will download all the required Android source files and their change histories.
 

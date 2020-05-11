@@ -3,7 +3,7 @@
 
   <remote  name="pixelrom"
            fetch="ssh://git@gitlab.com/Pixel3ROM"
-           revision="android10-qpr2-release" />
+           revision="android10-c2f2-release" />
   
   <remote  name="TeamIllusion"
            fetch="ssh://git@gitlab.com/TeamIllusion"

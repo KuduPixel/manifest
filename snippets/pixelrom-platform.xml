@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="pixelrom"
+           fetch="ssh://git@gitlab.com/Pixel3ROM"
+           revision="android10-qpr2-release" />
+
+  <project path="device/qcom/sepolicy" name="platform/device/qcom/sepolicy" groups="pdk,qcom" remote="pixelrom" />
+  <project path="external/exfat" name="platform/external/exfat" groups="pdk" remote="pixelrom" />
+  <project path="external/ntfs-3g" name="platform/external/ntfs-3g" groups="pdk" remote="pixelrom" />
+
+  <remove-project name="platform/frameworks/base" />
+  <project path="frameworks/base" name="platform/frameworks/base" groups="pdk-cw-fs,pdk-fs" remote="pixelrom" />
+  <remove-project name="platform/frameworks/av" />
+  <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" remote="pixelrom" />
+
+  <remove-project name="platform/system/core" />
+  <project path="system/core" name="platform/system/core" groups="pdk" remote="pixelrom" />
+  <remove-project name="platform/system/vold" />
+  <project path="system/vold" name="platform/system/vold" groups="pdk" remote="pixelrom" />
+
+  <project path="vendor/google" name="platform/vendor/google" groups="pdk,vendor" remote="pixelrom" />
+  <project path="vendor/gms" name="platform/vendor/gms" groups="pdk,vendor" remote="pixelrom" />
+  <project path="vendor/google/proprietary" name="platform/vendor/google_proprietary" groups="pdk,vendor" remote="pixelrom" />
+
+  <project path="vendor/codeaurora/telephony" name="platform/vendor/codeaurora/telephony" groups="pdk,vendor,qcom" remote="pixelrom" />
+  <project path="vendor/qcom/opensource/interfaces" name="platform/vendor/qcom/opensource/interfaces" groups="pdk,vendor,qcom" remote="pixelrom" />
+  <project path="vendor/qcom/opensource/fm-commonsys" name="platform/vendor/qcom/opensource/fm-commonsys" groups="pdk,vendor,qcom" remote="pixelrom" revision="android10-c2f2-release" />
+
+</manifest>

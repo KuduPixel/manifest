@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="pixelrom"
+           fetch="ssh://git@gitlab.com/Pixel3ROM"
+           revision="android10-qpr2-release" />
+
+  <project path="device/xiaomi/sdm845-common" name="device/xiaomi/sdm845-common" groups="device,sdm845" remote="pixelrom" />
+  <project path="vendor/google/product/beryllium" name="platform/vendor/google_product/beryllium" groups="device,sdm845,beryllium" remote="pixelrom" />
+  <project path="vendor/google/product/dipper" name="platform/vendor/google_product/dipper" groups="device,sdm845,dipper" remote="pixelrom" />
+  <project path="vendor/google/product/polaris" name="platform/vendor/google_product/polaris" groups="device,sdm845,polaris" remote="pixelrom" />
+
+  <project path="device/xiaomi/beryllium-kernel" name="device/xiaomi/beryllium-kernel" groups="device,beryllium,kernel" remote="pixelrom" />
+  <project path="device/xiaomi/dipper-kernel" name="device/xiaomi/dipper-kernel" groups="device,dipper,kernel" remote="pixelrom" />
+  <project path="device/xiaomi/polaris-kernel" name="device/xiaomi/polaris-kernel" groups="device,polaris,kernel" remote="pixelrom" />
+
+  <project path="vendor/xiaomi" name="vendor/xiaomi" groups="vendor,sdm845" remote="pixelrom" />
+
+  <project path="vendor/google/product/beryllium-firmware" name="vendor/google_product/beryllium-firmware" groups="firmware,beryllium" remote="pixelrom" />
+  <project path="vendor/google/product/dipper-firmware" name="vendor/google_product/dipper-firmware" groups="firmware,dipper" remote="pixelrom" />
+  <project path="vendor/google/product/polaris-firmware" name="vendor/google_product/polaris-firmware" groups="firmware,polaris" remote="pixelrom" />
+
+  <remove-project name="platform/hardware/qcom/sdm845/data/ipacfg-mgr" />
+  <project path="hardware/qcom/sdm845/data/ipacfg-mgr" name="platform/hardware/qcom/sdm845/data/ipacfg-mgr" groups="generic_fs,vendor,qcom_sdm845" remote="pixelrom" >
+    <linkfile src="os_pickup.mk" dest="hardware/qcom/sdm845/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom/sdm845/Android.bp" />
+  </project>
+  <remove-project name="platform/hardware/qcom/sdm845/display" />
+  <project path="hardware/qcom/sdm845/display" name="platform/hardware/qcom/sdm845/display" groups="generic_fs,qcom_sdm845" remote="pixelrom" />
+  <remove-project name="platform/hardware/qcom/sdm845/media" />
+  <project path="hardware/qcom/sdm845/media" name="platform/hardware/qcom/sdm845/media" groups="generic_fs,qcom_sdm845" remote="pixelrom" />
+
+</manifest>

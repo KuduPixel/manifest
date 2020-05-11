@@ -4,6 +4,17 @@
   <remote  name="pixelrom"
            fetch="ssh://git@gitlab.com/Pixel3ROM"
            revision="android10-qpr2-release" />
+  
+  <remote  name="TeamIllusion"
+           fetch="ssh://git@gitlab.com/TeamIllusion"
+           revision="ten" />
+
+  <remote  name="mtresk-gitlab"
+           fetch="https://gitlab.com/mTresk" />
+
+  <remote  name="pixel-gitlab"
+           fetch="https://gitlab.com/PixelExperience" />
+  
 
   <project path="device/qcom/sepolicy" name="platform/device/qcom/sepolicy" groups="pdk,qcom" remote="pixelrom" />
   <project path="external/exfat" name="platform/external/exfat" groups="pdk" remote="pixelrom" />
@@ -19,12 +30,11 @@
   <remove-project name="platform/system/vold" />
   <project path="system/vold" name="platform/system/vold" groups="pdk" remote="pixelrom" />
 
-  <project path="vendor/google" name="platform/vendor/google" groups="pdk,vendor" remote="pixelrom" />
-  <project path="vendor/gms" name="platform/vendor/gms" groups="pdk,vendor" remote="pixelrom" />
-  <project path="vendor/google/proprietary" name="platform/vendor/google_proprietary" groups="pdk,vendor" remote="pixelrom" />
-
-  <project path="vendor/codeaurora/telephony" name="platform/vendor/codeaurora/telephony" groups="pdk,vendor,qcom" remote="pixelrom" />
-  <project path="vendor/qcom/opensource/interfaces" name="platform/vendor/qcom/opensource/interfaces" groups="pdk,vendor,qcom" remote="pixelrom" />
+  <project path="vendor/pixelstyle" name="vendor_pixelstyle" remote="mtresk-gitlab" revision="android-10" />
+  <project path="vendor/codeaurora/telephony" name="platform/vendor/codeaurora/telephony" groups="pdk,vendor,qcom" remote="android10-c2f2-release" />
+  <project path="vendor/qcom/opensource/interfaces" name="platform/vendor/qcom/opensource/interfaces" groups="pdk,vendor,qcom" remote="android10-c2f2-release" />
   <project path="vendor/qcom/opensource/fm-commonsys" name="platform/vendor/qcom/opensource/fm-commonsys" groups="pdk,vendor,qcom" remote="pixelrom" revision="android10-c2f2-release" />
+  <project path="vendor/pixelgapps" name="platform_vendor_pixelgapps" remote="gitlab" revision="ten" />
+
 
 </manifest>

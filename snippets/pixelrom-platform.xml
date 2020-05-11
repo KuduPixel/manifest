@@ -13,6 +13,8 @@
            fetch="ssh://git@gitlab.com/mTresk" />
            revision="android-10" />
   
+  
+  
   <project path="device/qcom/sepolicy" name="platform/device/qcom/sepolicy" groups="pdk,qcom" remote="pixelrom" />
   <project path="external/exfat" name="platform/external/exfat" groups="pdk" remote="pixelrom" />
   <project path="external/ntfs-3g" name="platform/external/ntfs-3g" groups="pdk" remote="pixelrom" />

@@ -21,6 +21,10 @@
   <remote name="gitlab"
           fetch="https://gitlab.com" />
 
+  <remote  name="goog"
+           fetch="https://googleplex-android.googlesource.com/"
+           revision="master" />
+
   
   <project path="device/qcom/sepolicy" name="platform/device/qcom/sepolicy" groups="pdk,qcom" remote="pixelrom" />
   <project path="external/exfat" name="platform/external/exfat" groups="pdk" remote="pixelrom" />
@@ -37,11 +41,17 @@
   <project path="system/vold" name="platform/system/vold" groups="pdk" remote="pixelrom" />
 
   <project path="vendor/aosp" name="vendor_aosp" remote="pixel" />
-  <project path="vendor/gapps" name="vendor_gapps" remote="pixel-gitlab" clone-depth="1" />
   <project path="vendor/pixelstyle" name="vendor_pixelstyle" remote="pixel" />
   <project path="vendor/google-customization" name="vendor_google-customization" remote="pixel" />
   <project path="vendor/codeaurora/telephony" name="platform/vendor/codeaurora/telephony" groups="pdk,vendor,qcom" remote="pixelrom" />
   <project path="vendor/qcom/opensource/interfaces" name="platform/vendor/qcom/opensource/interfaces" groups="pdk,vendor,qcom" remote="pixelrom" />
   <project path="vendor/qcom/opensource/fm-commonsys" name="platform/vendor/qcom/opensource/fm-commonsys" groups="pdk,vendor,qcom" remote="pixelrom" revision="android10-c2f2-release" />
+
+  <project path="vendor/google/build" name="platform/vendor/google/build" groups="vendor" remote="goog" />
+  <project path="vendor/google/dev-keystore" name="platform/vendor/google/dev-keystore" revision="master" groups="vendor" remote="goog" />
+  <project path="vendor/google/products" name="platform/vendor/google/products" groups="vendor" remote="goog" />
+  <project path="vendor/unbundled_google/packages/gms" name="platform/vendor/aosp/unbundled_google/packages/gms" groups="vendor" remote="goog" clone-depth="1" />
+  <project path="vendor/google/security" name="platform/vendor/google/security" groups="vendor" remote="goog" clone-depth="1" />
+  <project path="vendor/google/tools" name="platform/vendor/google/tools" groups="vendor" remote="goog" clone-depth="1" />
 
 </manifest>

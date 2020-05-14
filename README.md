@@ -1,9 +1,3 @@
-Pixe3Rom
-Setting up your machine
-You must be running a 64-bit Linux distribution and must have installed some packages to build Paranoid Android. Google recommends using Ubuntu for this and provides instructions for setting up the system (with Ubuntu-specific commands) on the Android Open Source Project website.
-
-Once you have set up your machine according to the instructions by Google, return here and carry on with the rest of the instructions.
-
 Grabbing the source
 Repo is a tool provided by Google that simplifies using Git in the context of the Android source.
 
@@ -27,7 +21,7 @@ $ cd WORKSPACE
 
 # Install Repo in the created directory
 # Use a real name/email combination, if you intend to submit patches
-$ repo init -u https://github.com/pixel3rom/manifest -b android-10
+$ repo init -u https://github.com/KuduPixel/manifest -b android-10
 
 Downloading the source tree
 This is what you will run each time you want to pull in upstream changes. Keep in mind that on your first run, it is expected to take a while as it will download all the required Android source files and their change histories.

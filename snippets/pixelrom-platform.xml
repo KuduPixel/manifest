@@ -20,6 +20,11 @@
 
   <remote name="gitlab"
           fetch="https://gitlab.com" />
+  
+  <remote name="lineage"
+          fetch="https://github.com/LineageOS"
+          revision="lineage-17.1" />
+
  
   <project path="device/qcom/sepolicy" name="platform/device/qcom/sepolicy" groups="pdk,qcom" remote="pixelrom" />
   <project path="external/exfat" name="platform/external/exfat" groups="pdk" remote="pixelrom" />
@@ -43,5 +48,17 @@
   <project path="vendor/qcom/opensource/interfaces" name="platform/vendor/qcom/opensource/interfaces" groups="pdk,vendor,qcom" remote="pixelrom" />
   <project path="vendor/qcom/opensource/fm-commonsys" name="platform/vendor/qcom/opensource/fm-commonsys" groups="pdk,vendor,qcom" remote="pixelrom" revision="android10-c2f2-release" />
 
-
+  <project name="device_oneplus_guacamole" path="device/oneplus/guacamole" remote="pixel-devices" revision="ten" />
+  <project name="device_oneplus_sm8150-common" path="device/oneplus/sm8150-common" remote="pixel-devices" revision="ten" />
+  <project name="kernel_oneplus_sm8150" path="kernel/oneplus/sm8150" remote="pixel-devices" revision="ten" />
+  <project name="PixelExperience-Devices/vendor_oneplus" path="vendor/oneplus" remote="github" revision="ten" />
+  <project name="LineageOS/android_device_oneplus_common" path="device/oneplus/common" remote="github" revision="lineage-17.1" />
+  <project name="packages_apps_PixelLiveWallpaper" path="packages/apps/PixelLiveWallpaper" remote="pixel-gitlab" revision="ten" />
+  <project name="LineageOS/android_vendor_nxp_interfaces_opensource_nfc" path="vendor/nxp/opensource/interfaces/nfc" remote="github" revision="lineage-17.1" />
+  <project name="LineageOS/android_vendor_nxp_opensource_external_libnfc-nci" path="vendor/nxp/opensource/commonsys/external/libnfc-nci" remote="github" revision="lineage-17.1" />
+  <project name="LineageOS/android_vendor_nxp_opensource_frameworks" path="vendor/nxp/opensource/commonsys/frameworks" remote="github" revision="lineage-17.1" />
+  <project name="LineageOS/android_vendor_nxp_opensource_packages_apps_Nfc" path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" remote="github" revision="lineage-17.1" />
+  <project name="LineageOS/android_vendor_nxp_opensource_halimpl" path="vendor/nxp/opensource/sn100x/halimpl" remote="github" revision="lineage-17.1-sn100x" />
+  <project name="LineageOS/android_vendor_nxp_opensource_hidlimpl" path="vendor/nxp/opensource/sn100x/hidlimpl" remote="github" revision="lineage-17.1-sn100x" />
+  
 </manifest>

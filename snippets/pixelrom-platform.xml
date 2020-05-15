@@ -25,6 +25,8 @@
           fetch="https://github.com/LineageOS"
           revision="lineage-17.1" />
 
+  <remote name="github"
+          fetch="https://github.com" />
  
   <project path="device/qcom/sepolicy" name="platform/device/qcom/sepolicy" groups="pdk,qcom" remote="pixelrom" />
   <project path="external/exfat" name="platform/external/exfat" groups="pdk" remote="pixelrom" />
